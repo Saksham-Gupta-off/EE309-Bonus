@@ -1,0 +1,259 @@
+Analysis & Synthesis report for Top_entity
+Thu May 05 23:40:44 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Thu May 05 23:40:44 2022           ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; Top_entity                                  ;
+; Top-level Entity Name              ; Top_entity                                  ;
+; Family                             ; Cyclone 10 LP                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10CL120ZF780I8G    ;                    ;
+; Top-level entity name                                            ; Top_entity         ; Top_entity         ;
+; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu May 05 23:40:36 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c Top_entity
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file write_control.vhd
+    Info (12022): Found design unit 1: write_control-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/write_control.vhd Line: 15
+    Info (12023): Found entity 1: write_control File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/write_control.vhd Line: 5
+Info (12021): Found 6 design units, including 3 entities, in source file wb_stage.vhd
+    Info (12022): Found design unit 1: user_flagz-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 12
+    Info (12022): Found design unit 2: user_flagc-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 40
+    Info (12022): Found design unit 3: WB_stage-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 73
+    Info (12023): Found entity 1: user_flagz File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 5
+    Info (12023): Found entity 2: user_flagc File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 33
+    Info (12023): Found entity 3: WB_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/WB_stage.vhd Line: 61
+Info (12021): Found 2 design units, including 1 entities, in source file top_entity.vhd
+    Info (12022): Found design unit 1: Top_entity-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Top_entity.vhd Line: 13
+    Info (12023): Found entity 1: Top_entity File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Top_entity.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file rf_d2_control.vhd
+    Info (12022): Found design unit 1: RF_d2_control-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/RF_d2_control.vhd Line: 16
+    Info (12023): Found entity 1: RF_d2_control File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/RF_d2_control.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file rf_d1_control.vhd
+    Info (12022): Found design unit 1: RF_d1_control-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/RF_d1_control.vhd Line: 17
+    Info (12023): Found entity 1: RF_d1_control File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/RF_d1_control.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file rem_controls.vhd
+    Info (12022): Found design unit 1: rem_controls-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/rem_controls.vhd Line: 21
+    Info (12023): Found entity 1: rem_controls File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/rem_controls.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file pe2_mux_control.vhd
+    Info (12022): Found design unit 1: PE2_mux_control-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/PE2_mux_control.vhd Line: 13
+    Info (12023): Found entity 1: PE2_mux_control File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/PE2_mux_control.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file pe1_mux_control.vhd
+    Info (12022): Found design unit 1: PE1_mux_control-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/PE1_mux_control.vhd Line: 13
+    Info (12023): Found entity 1: PE1_mux_control File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/PE1_mux_control.vhd Line: 5
+Info (12021): Found 18 design units, including 9 entities, in source file or_stage.vhd
+    Info (12022): Found design unit 1: R7-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 13
+    Info (12022): Found design unit 2: OR_interface_reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 40
+    Info (12022): Found design unit 3: SE9-SignedExtender File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 68
+    Info (12022): Found design unit 4: SE6-SignedExtender File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 94
+    Info (12022): Found design unit 5: priority_encoder2-PriorityEncoder File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 123
+    Info (12022): Found design unit 6: reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 176
+    Info (12022): Found design unit 7: RegFile-Register_file File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 209
+    Info (12022): Found design unit 8: ALU_3-al File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 281
+    Info (12022): Found design unit 9: OR_stage-ors File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 321
+    Info (12023): Found entity 1: R7 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 5
+    Info (12023): Found entity 2: OR_interface_reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 32
+    Info (12023): Found entity 3: SE9 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 61
+    Info (12023): Found entity 4: SE6 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 87
+    Info (12023): Found entity 5: priority_encoder2 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 114
+    Info (12023): Found entity 6: reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 168
+    Info (12023): Found entity 7: RegFile File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 198
+    Info (12023): Found entity 8: ALU_3 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 274
+    Info (12023): Found entity 9: OR_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/OR_stage.vhd Line: 304
+Info (12021): Found 6 design units, including 3 entities, in source file mem_stage.vhd
+    Info (12022): Found design unit 1: memory_data-mem File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 13
+    Info (12022): Found design unit 2: mem_interface_reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 42
+    Info (12022): Found design unit 3: Mem_stage-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 73
+    Info (12023): Found entity 1: memory_data File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 5
+    Info (12023): Found entity 2: mem_interface_reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 34
+    Info (12023): Found entity 3: Mem_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Mem_stage.vhd Line: 62
+Info (12021): Found 10 design units, including 5 entities, in source file if_stage.vhd
+    Info (12022): Found design unit 1: memory_instruction-mem File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 10
+    Info (12022): Found design unit 2: PC-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 28
+    Info (12022): Found design unit 3: ALU_1-al File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 52
+    Info (12022): Found design unit 4: IF_interface_reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 73
+    Info (12022): Found design unit 5: IF_stage-arc File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 98
+    Info (12023): Found entity 1: memory_instruction File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 5
+    Info (12023): Found entity 2: PC File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 20
+    Info (12023): Found entity 3: ALU_1 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 47
+    Info (12023): Found entity 4: IF_interface_reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 65
+    Info (12023): Found entity 5: IF_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/IF_stage.vhd Line: 91
+Info (12021): Found 4 design units, including 2 entities, in source file id_stage.vhd
+    Info (12022): Found design unit 1: ID_interface_reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/ID_stage.vhd Line: 13
+    Info (12022): Found design unit 2: ID_stage-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/ID_stage.vhd Line: 41
+    Info (12023): Found entity 1: ID_interface_reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/ID_stage.vhd Line: 5
+    Info (12023): Found entity 2: ID_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/ID_stage.vhd Line: 33
+Info (12021): Found 10 design units, including 5 entities, in source file ex_stage.vhd
+    Info (12022): Found design unit 1: ALU_2-al File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 14
+    Info (12022): Found design unit 2: priority_encoder1-PriorityEncoder File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 61
+    Info (12022): Found design unit 3: EX_interface_reg-reg_arch File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 118
+    Info (12022): Found design unit 4: SE6_ex-SignedExtender File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 145
+    Info (12022): Found design unit 5: EX_stage-Behave File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 175
+    Info (12023): Found entity 1: ALU_2 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 5
+    Info (12023): Found entity 2: priority_encoder1 File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 52
+    Info (12023): Found entity 3: EX_interface_reg File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 110
+    Info (12023): Found entity 4: SE6_ex File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 138
+    Info (12023): Found entity 5: EX_stage File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/EX_stage.vhd Line: 163
+Info (12127): Elaborating entity "Top_entity" for the top level hierarchy
+Error (10321): VHDL error at Top_entity.vhd(446): choice ""0001"" overlaps with a previous choice File: C:/Users/drsak/Downloads/RISC-Microprocessor-Design-master - 1/RISC-Microprocessor-Design-master/Project_2_RISC_Pipelined/Top_entity.vhd Line: 446
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4769 megabytes
+    Error: Processing ended: Thu May 05 23:40:44 2022
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:19
+
+
